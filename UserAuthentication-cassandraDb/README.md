@@ -20,6 +20,12 @@ How to create keyspace?
 		 keyspace jwtcassandrademo with replication={'class':'SimpleStrategy', 'replication_factor':1};
 
 2)	Spring version 2.2.4.Release must (new version of spring doesnot work)
+		<parent>
+      		  <groupId>org.springframework.boot</groupId>
+       		 <artifactId>spring-boot-starter-parent</artifactId>
+       		 <version>2.2.4.RELEASE</version>
+       		 <relativePath/> <!-- lookup parent from repository -->
+    		</parent>
 3)	In Repository if there is any abstract method like findBy…, then it should be annotated with @AllowFiltering
  
 
