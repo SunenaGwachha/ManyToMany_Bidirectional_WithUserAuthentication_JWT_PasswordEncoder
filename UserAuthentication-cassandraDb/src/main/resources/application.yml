@@ -7,3 +7,16 @@ spring:
       password: cassandra
       port: 9042
       schemaAction: CREATE_IF_NOT_EXISTS
+      
+      
+       Just for note below is
+      
+ spring:
+   data:
+    cassandra:
+      keyspaceName: userauthentication     // must be there
+      contactPoints: localhost 	//must not be localhost or port number 127.0.0.1     
+      username: cassandra
+      password: cassandra
+      port: 9042
+      schemaAction: CREATE_IF_NOT_EXISTS
