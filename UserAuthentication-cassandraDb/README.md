@@ -1,19 +1,23 @@
 Install casssandra on MAC
 
 1)	Go to Terminal
- brew install casssandra// it will install
+
+		 brew install casssandra// it will install
 2)	Start the casssandra
-	 brew services start Cassandra
+
+		 brew services start Cassandra
 3)	Cassandra will be started 
 4)	Go to Cassandra terminal
-	 cqlsh localhost
+
+		 cqlsh localhost
 
 
 NOTE
 
 1)	Note:Keyspace should be there
 How to create keyspace?
- keyspace jwtcassandrademo with replication={'class':'SimpleStrategy', 'replication_factor':1};
+
+	 keyspace jwtcassandrademo with replication={'class':'SimpleStrategy', 'replication_factor':1};
 
 2)	Spring version 2.2.4.Release must (new version of spring doesnot work)
 3)	In Repository if there is any abstract method like findBy…, then it should be annotated with @AllowFiltering
