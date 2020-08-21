@@ -7,5 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends CassandraRepository<User,String> {
+    @AllowFiltering
     User findByUsername(String username);
 }
