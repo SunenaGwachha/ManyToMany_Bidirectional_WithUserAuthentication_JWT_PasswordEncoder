@@ -1,0 +1,9 @@
+spring:
+  data:
+    cassandra:
+      keyspaceName: userauthentication
+      contactPoints: localhost
+      username: cassandra
+      password: cassandra
+      port: 9042
+      schemaAction: CREATE_IF_NOT_EXISTS
